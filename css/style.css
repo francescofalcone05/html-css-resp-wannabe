@@ -10,7 +10,6 @@
 }
 
 body {
-    width: 100vw;
     font-family: 'Nunito Sans', sans-serif;
     color: #b8c1ec;
     background: #232946;
@@ -129,17 +128,54 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
+@media screen and (max-width: 1160px) {
+    .container{
+        width: 100%;
+
+    }
+
+    .steps{
+        width: 100%;
+    }
+    
+}
+
 @media screen and (max-width: 768px) {
-    body {
-        width: 100vw;
+    .container{
+        width: 100%;
+
+    }
+
+    .steps{
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        width: 100%;
+
+    }
+
+    .steps{
+        width: 100%;
     }
 
     .row {
-        flex-wrap: wrap;
+        flex-flow: column wrap;
     }
 
+    .steps .col{
+        width: 100%;
+    }
 
+    .lessons .col{
+        width: 100%;
+    }
 
-
-    
+    .why-us .col{
+        width: 100%;
+    }
 }
